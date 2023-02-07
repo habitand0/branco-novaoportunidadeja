@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  
+    <link rel="preload" href="https://scripts.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/player.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+    <link rel="preload" href="https://images.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/thumbnail.jpg" as="image">
+    <link rel="preload" href="https://cdn.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/63e28206613140000a656ec4/playlist.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+	  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/com.css">
@@ -32,6 +42,11 @@
         background-color: black;
         background-attachment: fixed;
       }
+      .smartplayer-image-start, .smartplayer-video, .smartplayer-video-current{
+      	border: 1px solid #4adede !important;
+	box-shadow: 0 0 6px 3px rgb(74 222 222 / 33%) !important;
+	border-radius: 4px !important;
+      }
     </style>
   </head>
   <body>    
@@ -39,10 +54,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <!-- VSL -->
-			<div class="videofundoazul">
-            <div id="vid_63df2185dac01800092a7dd4" style="border-radius: 3px;position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_63df2185dac01800092a7dd4" src="https://images.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63df2185dac01800092a7dd4/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_63df2185dac01800092a7dd4" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_63df2185dac01800092a7dd4">var s=document.createElement("script");s.src="https://scripts.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63df2185dac01800092a7dd4/player.js",s.async=!0,document.head.appendChild(s);</script>
-			</div>
+            <!-- VSL -->			
+            <div id="vid_63e2828ec71e360009accf87" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_63e2828ec71e360009accf87" src="https://images.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_63e2828ec71e360009accf87" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_63e2828ec71e360009accf87">var s=document.createElement("script");s.src="https://scripts.converteai.net/72089295-c0ee-414a-ac1e-e009acd654f1/players/63e2828ec71e360009accf87/player.js",s.async=!0,document.head.appendChild(s);</script>
+			
 			<!-- Script Delay Botão -->
 			<style>.lagbut{display:none;}</style> 
 			<script type="text/javascript">
@@ -72,12 +86,7 @@
           </div>
         </div>
       </div>
-    </header>
-	<style>.videofundoazul {
-		border: 1px solid #4adede;
-		box-shadow: 0 0 6px 3px rgb(74 222 222 / 33%);
-		border-radius: 4px;
-	}</style>
+    </header>	
 	<style>@keyframes pulse {
 	  0% {    transform: scaleX(1)  }
 	  50% {    transform: scale3d(1.05, 1.05, 1.05)  }
